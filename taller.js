@@ -388,7 +388,7 @@
       $mods.appendChild(pintaSeccion(sec, i));
     });
 
-    // Estado inicial: abierto el que pida la URL o por defecto el primero
+    // Estado inicial: todas las categorías colapsadas por defecto
     todos(false);
     var destino = location.hash ? document.getElementById(location.hash.slice(1)) : null;
     if (destino && destino.classList.contains('mod-block')) {
@@ -396,10 +396,6 @@
       setTimeout(function () {
         destino.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
-    } else {
-      // Abrir el primer módulo por defecto para dar bienvenida amigable
-      var primerModulo = $mods.querySelector('.mod-block');
-      if (primerModulo) abre(primerModulo, true, false);
     }
 
     var $acciones = document.getElementById('acciones');
