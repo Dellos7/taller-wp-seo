@@ -1,0 +1,132 @@
+{
+  "taller": "Taller de WordPress, SEO y n8n",
+  "subtitulo": "Todo el material del taller en un solo sitio: diapositivas, apuntes, archivos para descargar y las herramientas que usamos en cada sesión.",
+  "actualizado": "agosto de 2026",
+  "secciones": [
+    {
+      "id": "wordpress",
+      "numero": "01",
+      "nombre": "WordPress",
+      "descripcion": "Montar el sitio, los plugins imprescindibles y publicar de forma que el contenido rinda desde el primer día.",
+      "recursos": [
+        {
+          "titulo": "Apuntes del módulo",
+          "tipo": "apuntes",
+          "url": "../wordpress/index.html",
+          "descripcion": "La referencia larga para consultar después de la sesión.",
+          "meta": "En preparación"
+        },
+        {
+          "titulo": "Descargar WordPress",
+          "tipo": "herramienta",
+          "url": "https://es.wordpress.org/download/",
+          "descripcion": "La versión oficial en español, para instalaciones propias."
+        },
+        {
+          "titulo": "Rank Math SEO",
+          "tipo": "herramienta",
+          "url": "https://es.wordpress.org/plugins/seo-by-rank-math/",
+          "descripcion": "El plugin de SEO que usamos en el taller. Uno solo: nunca a la vez que Yoast."
+        },
+        {
+          "titulo": "LiteSpeed Cache",
+          "tipo": "herramienta",
+          "url": "https://es.wordpress.org/plugins/litespeed-cache/",
+          "descripcion": "Caché, minificación y WebP en un único plugin de rendimiento."
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "numero": "02",
+      "nombre": "SEO",
+      "descripcion": "Cómo se gana visibilidad en 2026: primero en Google, y ahora también dentro de ChatGPT, AI Overviews y Perplexity.",
+      "recursos": [
+        {
+          "titulo": "Presentación de la sesión",
+          "tipo": "diapositivas",
+          "url": "../claude/v1/seo-geo-2026.html",
+          "descripcion": "SEO & GEO 2026, 67 diapositivas. Se abre en el navegador; con la tecla S se activa la vista de presentador.",
+          "meta": "HTML"
+        },
+        {
+          "titulo": "Presentación en PowerPoint",
+          "tipo": "descarga",
+          "url": "../claude/v1/seo-geo-2026.pptx",
+          "descripcion": "La misma presentación, editable y para llevártela.",
+          "meta": "PPTX · 1,4 MB",
+          "descarga": true
+        },
+        {
+          "titulo": "Apuntes completos del módulo",
+          "tipo": "apuntes",
+          "url": "../seo/index.html",
+          "descripcion": "Ocho bloques, de la investigación de keywords a la optimización para motores generativos."
+        },
+        {
+          "titulo": "Glosario",
+          "tipo": "apuntes",
+          "url": "../seo/glosario.html",
+          "descripcion": "Las siglas del sector, explicadas y ordenadas alfabéticamente."
+        },
+        {
+          "titulo": "Fuentes y bibliografía",
+          "tipo": "apuntes",
+          "url": "../seo/fuentes.html",
+          "descripcion": "De dónde sale cada dato de la sesión, para poder comprobarlo."
+        },
+        {
+          "titulo": "Google Search Console",
+          "tipo": "herramienta",
+          "url": "https://search.google.com/search-console",
+          "descripcion": "La herramienta con la que empieza cualquier proyecto. Gratis."
+        },
+        {
+          "titulo": "PageSpeed Insights",
+          "tipo": "herramienta",
+          "url": "https://pagespeed.web.dev/",
+          "descripcion": "Core Web Vitals de cualquier URL, con datos de usuarios reales."
+        },
+        {
+          "titulo": "Ahrefs Free Keyword Generator",
+          "tipo": "herramienta",
+          "url": "https://ahrefs.com/keyword-generator",
+          "descripcion": "Cien ideas de keyword con volumen estimado, sin registro."
+        }
+      ]
+    },
+    {
+      "id": "n8n",
+      "numero": "03",
+      "nombre": "n8n",
+      "descripcion": "Automatizar el trabajo repetitivo de marketing sin depender de un desarrollador.",
+      "recursos": [
+        {
+          "titulo": "Apuntes del módulo",
+          "tipo": "apuntes",
+          "url": "../n8n/index.html",
+          "descripcion": "La referencia larga para consultar después de la sesión.",
+          "meta": "En preparación"
+        },
+        {
+          "titulo": "n8n",
+          "tipo": "herramienta",
+          "url": "https://n8n.io/",
+          "descripcion": "La plataforma: versión en la nube y versión que puedes instalar tú."
+        },
+        {
+          "titulo": "Documentación oficial",
+          "tipo": "enlace",
+          "url": "https://docs.n8n.io/",
+          "descripcion": "El manual de referencia de nodos, credenciales y expresiones."
+        },
+        {
+          "titulo": "Plantillas de flujos",
+          "tipo": "plantilla",
+          "url": "https://n8n.io/workflows/",
+          "descripcion": "Miles de flujos ya montados que se importan y se adaptan."
+        }
+      ]
+    }
+  ]
+}
