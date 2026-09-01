@@ -31,13 +31,8 @@
   var $mods = document.getElementById('mods');
   var $buscar = document.getElementById('buscar-recursos');
   var $limpiarBusqueda = document.getElementById('limpiar-busqueda');
-  var $filtroTipos = document.getElementById('filtro-tipos');
-  var $searchStatus = document.getElementById('search-status');
-  var $searchStatusText = document.getElementById('search-status-text');
-  var $resetAllFilters = document.getElementById('reset-all-filters');
 
   var datosGlobales = null;
-  var filtroTipoActivo = 'todos';
   var terminoBusqueda = '';
 
   // ---------------------------------------------------------- utilidades
@@ -298,16 +293,10 @@
 
     $mods.innerHTML = '';
     var totalCoincidencias = 0;
-    var algunModuloConResultados = false;
 
     secciones.forEach(function (sec, i) {
       var recursosOriginales = sec.recursos || [];
       var filtrados = recursosOriginales.filter(function (rec) {
-        // Filtro por tipo
-        if (filtroTipoActivo !== 'todos' && rec.tipo !== filtroTipoActivo) {
-          return false;
-        }
-        // Filtro por término de búsqueda
         if (query) {
           var enTitulo = (rec.titulo || '').toLowerCase().indexOf(query) !== -1;
           var enDesc = (rec.descripcion || '').toLowerCase().indexOf(query) !== -1;
@@ -321,35 +310,20 @@
 
       totalCoincidencias += filtrados.length;
 
-      // Si hay búsqueda activa o filtro de tipo, solo mostramos módulos con resultados o si todos están vacíos
-      if (!query && filtroTipoActivo === 'todos') {
+      if (!query) {
         var modEl = pintaSeccion(sec, i, filtrados);
         $mods.appendChild(modEl);
       } else if (filtrados.length > 0) {
-        algunModuloConResultados = true;
         var modElFiltrado = pintaSeccion(sec, i, filtrados);
         $mods.appendChild(modElFiltrado);
-        // Abrir automáticamente módulos con resultados al filtrar
         abre(modElFiltrado, true, false);
       }
     });
 
-    // Barra de estado de búsqueda
-    var hayFiltroActivo = query.length > 0 || filtroTipoActivo !== 'todos';
-    if (hayFiltroActivo) {
-      $searchStatus.hidden = false;
-      var textoStatus = 'Mostrando ' + plural(totalCoincidencias, 'recurso encontrado', 'recursos encontrados');
-      if (query) textoStatus += ' para "' + query + '"';
-      if (filtroTipoActivo !== 'todos') textoStatus += ' (' + filtroTipoActivo + ')';
-      $searchStatusText.textContent = textoStatus;
-
-      if (totalCoincidencias === 0) {
-        var emptyBox = el('div', 'loading-state');
-        emptyBox.innerHTML = '<p style="font-size:1.1rem;font-weight:600;color:var(--text-main);">No se encontraron recursos</p><p style="color:var(--text-muted);">Prueba con otros términos como "Rank Math", "PPTX", "SEO" o selecciona "Todos".</p>';
-        $mods.appendChild(emptyBox);
-      }
-    } else {
-      $searchStatus.hidden = true;
+    if (query && totalCoincidencias === 0) {
+      var emptyBox = el('div', 'loading-state');
+      emptyBox.innerHTML = '<p style="font-size:1.1rem;font-weight:600;color:var(--text-main);">No se encontraron recursos</p><p style="color:var(--text-muted);">Prueba con otros términos como "Rank Math", "PPTX", "SEO".</p>';
+      $mods.appendChild(emptyBox);
     }
   }
 
@@ -435,35 +409,6 @@
       });
     }
 
-    // Filtro por tipo de recurso
-    if ($filtroTipos) {
-      $filtroTipos.addEventListener('click', function (e) {
-        var btn = e.target.closest('.filter-pill');
-        if (!btn) return;
-        $filtroTipos.querySelectorAll('.filter-pill').forEach(function (p) {
-          p.classList.remove('is-active');
-        });
-        btn.classList.add('is-active');
-        filtroTipoActivo = btn.getAttribute('data-tipo') || 'todos';
-        aplicarFiltros();
-      });
-    }
-
-    // Resetear filtros
-    if ($resetAllFilters) {
-      $resetAllFilters.addEventListener('click', function () {
-        terminoBusqueda = '';
-        if ($buscar) $buscar.value = '';
-        if ($limpiarBusqueda) $limpiarBusqueda.hidden = true;
-        filtroTipoActivo = 'todos';
-        if ($filtroTipos) {
-          $filtroTipos.querySelectorAll('.filter-pill').forEach(function (p) {
-            p.classList.toggle('is-active', p.getAttribute('data-tipo') === 'todos');
-          });
-        }
-        aplicarFiltros();
-      });
-    }
 
     // Atajo de teclado: Tecla '/' para enfocar el buscador
     window.addEventListener('keydown', function (e) {
@@ -475,6 +420,36 @@
         }
       }
     });
+
+    // Control de estado sticky del buscador
+    inicializarStickyControls();
+  }
+
+  // ---------------------------------------------------------- detector sticky
+  function inicializarStickyControls() {
+    var $controlsBar = document.querySelector('.controls-bar');
+    var $sentinel = document.querySelector('.sticky-sentinel');
+    if (!$controlsBar || !$sentinel) return;
+
+    function actualizarSticky() {
+      var topbarH = window.innerWidth <= 768 ? 54 : 58;
+      var rect = $sentinel.getBoundingClientRect();
+      $controlsBar.classList.toggle('is-stuck', rect.top <= topbarH);
+    }
+
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function () {
+        actualizarSticky();
+      }, {
+        rootMargin: '-54px 0px 0px 0px',
+        threshold: [0, 1]
+      });
+      obs.observe($sentinel);
+    }
+
+    window.addEventListener('scroll', actualizarSticky, { passive: true });
+    window.addEventListener('resize', actualizarSticky, { passive: true });
+    actualizarSticky();
   }
 
   // ---------------------------------------------------------- carga

@@ -1,127 +1,133 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Taller de WordPress, SEO y n8n — Material del Máster</title>
-<meta name="description" content="Portal oficial de recursos del taller: diapositivas interactivas, presentaciones descargables, apuntes completos y herramientas de WordPress, SEO y n8n.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilos.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller de WordPress, SEO y n8n — Material del Máster</title>
+  <meta name="description"
+    content="Portal oficial de recursos del taller: diapositivas interactivas, presentaciones descargables, apuntes completos y herramientas de WordPress, SEO y n8n.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css?v=4">
 </head>
+
 <body>
 
-<!-- Barra de navegación superior -->
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="../index.html" title="Volver al índice general de apuntes">
-      <span class="brand-logo" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
-          <path d="M6 6h10M6 10h10"/>
-        </svg>
-      </span>
-      <span class="brand-name">Apuntes de Máster</span>
-    </a>
-  </div>
-</header>
-
-<div class="page-container">
-  <!-- Fondo ambiental Talkbase (glow gradients) -->
-  <div class="ambient-glow" aria-hidden="true">
-    <div class="glow glow-1"></div>
-    <div class="glow glow-2"></div>
-    <div class="glow glow-3"></div>
-  </div>
-
-  <!-- Hero principal -->
-  <section class="hero-section">
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-pulse" aria-hidden="true"></span>
-        <span class="badge-text">Material Oficial · Máster en Marketing Digital</span>
-      </div>
-      <h1 id="titulo" class="hero-title">Taller de WordPress, SEO y n8n</h1>
-      <p id="subtitulo" class="hero-lede">
-        Todos los recursos del taller organizados para las clases: presentaciones en HTML, diapositivas en PowerPoint, apuntes detallados y herramientas clave para cada módulo.
-      </p>
-    </div>
-  </section>
-
-  <!-- Barra de control interactiva: Búsqueda, Filtros y Acordeones -->
-  <section class="controls-bar" aria-label="Filtros y buscador de recursos">
-    <div class="controls-wrapper">
-      <!-- Buscador en tiempo real -->
-      <div class="search-box">
-        <label for="buscar-recursos" class="sr-only">Buscar recursos o herramientas</label>
-        <span class="search-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+  <!-- Barra de navegación superior -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html" title="Volver al índice general de apuntes">
+        <span class="brand-logo" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+            <path d="M6 6h10M6 10h10" />
           </svg>
         </span>
-        <input type="text" id="buscar-recursos" placeholder="Buscar por tema, plugin o herramienta (ej. Rank Math, PPTX, n8n)..." autocomplete="off">
-        <button type="button" id="limpiar-busqueda" class="clear-search" aria-label="Limpiar búsqueda" hidden>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
+        <span class="brand-name">Taller de WordPress, SEO y n8n</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="page-container">
+    <!-- Fondo ambiental Talkbase (glow gradients) -->
+    <div class="ambient-glow" aria-hidden="true">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="glow glow-3"></div>
+    </div>
+
+    <!-- Hero principal -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse" aria-hidden="true"></span>
+          <span class="badge-text">Máster en Marketing Digital</span>
+        </div>
+        <h1 id="titulo" class="hero-title">Taller de WordPress, SEO y n8n</h1>
+        <p id="subtitulo" class="hero-lede">
+          Todos los recursos necesarios del taller.
+        </p>
       </div>
+    </section>
 
-      <!-- Filtro por tipos de recurso -->
-      <div class="filter-pills" id="filtro-tipos" role="group" aria-label="Filtrar por tipo de recurso">
-        <button type="button" class="filter-pill is-active" data-tipo="todos">Todos</button>
-        <button type="button" class="filter-pill" data-tipo="diapositivas">Diapositivas</button>
-        <button type="button" class="filter-pill" data-tipo="descarga">Descargas</button>
-        <button type="button" class="filter-pill" data-tipo="apuntes">Apuntes</button>
-        <button type="button" class="filter-pill" data-tipo="herramienta">Herramientas</button>
-        <button type="button" class="filter-pill" data-tipo="plantilla">Plantillas</button>
+    <!-- Centinela para detectar estado sticky del buscador -->
+    <div class="sticky-sentinel" aria-hidden="true"></div>
+
+    <!-- Barra de control interactiva: Búsqueda y Acordeones -->
+    <section class="controls-bar" aria-label="Buscador y controles de visualización">
+      <div class="controls-wrapper">
+        <!-- Buscador en tiempo real -->
+        <div class="search-box">
+          <label for="buscar-recursos" class="sr-only">Buscar recursos o herramientas</label>
+          <span class="search-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </span>
+          <input type="text" id="buscar-recursos"
+            placeholder="Buscar por tema, plugin o herramienta (ej. Rank Math, PPTX, n8n)..." autocomplete="off">
+          <button type="button" id="limpiar-busqueda" class="clear-search" aria-label="Limpiar búsqueda" hidden>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Acciones de expandir / colapsar -->
+        <div class="accordion-actions" id="acciones" hidden>
+          <button type="button" id="abrir-todo" class="action-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m7 15 5 5 5-5M7 9l5-5 5 5" />
+            </svg>
+            <span>Expandir todo</span>
+          </button>
+          <button type="button" id="cerrar-todo" class="action-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m7 9 5-5 5 5M7 15l5 5 5-5" />
+            </svg>
+            <span>Colapsar todo</span>
+          </button>
+        </div>
       </div>
+    </section>
 
-      <!-- Acciones de expandir / colapsar -->
-      <div class="accordion-actions" id="acciones" hidden>
-        <button type="button" id="abrir-todo" class="action-btn">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 15 5 5 5-5M7 9l5-5 5 5"/></svg>
-          <span>Expandir todo</span>
-        </button>
-        <button type="button" id="cerrar-todo" class="action-btn">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"/></svg>
-          <span>Colapsar todo</span>
-        </button>
+    <!-- Contenedor principal dinámico de módulos y recursos -->
+    <main class="modules-container" id="mods">
+      <div class="loading-state">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Cargando recursos del taller…</p>
       </div>
-    </div>
-
-    <!-- Indicador de resultados activos cuando hay búsqueda o filtro -->
-    <div class="search-status" id="search-status" hidden>
-      <span id="search-status-text">Mostrando resultados</span>
-      <button type="button" id="reset-all-filters" class="reset-link">Restablecer filtros</button>
-    </div>
-  </section>
-
-  <!-- Contenedor principal dinámico de módulos y recursos -->
-  <main class="modules-container" id="mods">
-    <div class="loading-state">
-      <div class="spinner" aria-hidden="true"></div>
-      <p>Cargando recursos del taller…</p>
-    </div>
-  </main>
-</div>
-
-<!-- Pie de página centrado Talkbase -->
-<footer class="site-footer">
-  <div class="footer-centered">
-    <div class="footer-logo">
-      <span class="brand-logo sm" aria-hidden="true">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg>
-      </span>
-      <span class="footer-brand-title">Marketing Digital Aplicado</span>
-    </div>
-    <p class="footer-tagline">Material lectivo oficial del máster: WordPress, SEO / GEO 2026 y automatización con n8n.</p>
-    <div class="footer-bottom-info">
-      <span>© 2026 Material docente para alumnos del máster</span>
-    </div>
+    </main>
   </div>
-</footer>
 
-<script src="taller.js" defer></script>
+  <!-- Pie de página centrado Talkbase -->
+  <footer class="site-footer">
+    <div class="footer-centered">
+      <div class="footer-logo">
+        <span class="brand-logo sm" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+          </svg>
+        </span>
+        <span class="footer-brand-title">Marketing Digital Aplicado</span>
+      </div>
+      <p class="footer-tagline">Taller de WordPress, SEO y n8n
+      </p>
+      <div class="footer-bottom-info">
+        <span>© 2026 · David López Castellote</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="taller.js" defer></script>
 </body>
+
 </html>
