@@ -24,13 +24,6 @@
           "meta": "Google Slides"
         },
         {
-          "titulo": "Presentación: WordPress + IA",
-          "tipo": "diapositivas",
-          "url": "https://docs.google.com/presentation/d/1WOLL5XT0Ne97j3Y4lpsS5OHotDOSr6JG5AHDizH9Toc/edit?usp=sharing",
-          "descripcion": "Uso de Inteligencia Artificial para creación de contenidos, diseño y optimización en WordPress.",
-          "meta": "Google Slides"
-        },
-        {
           "titulo": "Presentación: Proyecto web \"Cervezas Brancal\"",
           "tipo": "diapositivas",
           "url": "https://docs.google.com/presentation/d/1ekOOrHKjoFx-Tu9CY36aM2KaNMYuZ4aP0tIFVrkSBfg/edit?usp=sharing",
@@ -43,6 +36,13 @@
           "url": "https://drive.google.com/drive/folders/1-Xv7GW_WNwAQ9M7rexWnuul4qoiMOztk?usp=sharing",
           "descripcion": "Carpeta compartida con imágenes, logotipos y archivos multimedia para el proyecto.",
           "meta": "Google Drive"
+        },
+        {
+          "titulo": "Presentación: WordPress + IA",
+          "tipo": "diapositivas",
+          "url": "https://docs.google.com/presentation/d/1WOLL5XT0Ne97j3Y4lpsS5OHotDOSr6JG5AHDizH9Toc/edit?usp=sharing",
+          "descripcion": "Uso de Inteligencia Artificial para creación de contenidos, diseño y optimización en WordPress.",
+          "meta": "Google Slides"
         },
         {
           "titulo": "Panel de WordPress.com",
