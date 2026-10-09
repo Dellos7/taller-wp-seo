@@ -1,130 +1,103 @@
 {
-  "taller": "Taller de WordPress, SEO y n8n",
-  "subtitulo": "Todo el material del taller en un solo sitio: diapositivas, apuntes, archivos para descargar y las herramientas que usamos en cada sesión.",
-  "actualizado": "agosto de 2026",
+  "taller": "Taller de WordPress y Make",
+  "subtitulo": "Taller de Marketing web con Wordpress y automatizaciones.",
+  "actualizado": "octubre de 2026",
   "secciones": [
     {
       "id": "wordpress",
       "numero": "01",
-      "nombre": "WordPress",
-      "descripcion": "Montar el sitio, los plugins imprescindibles y publicar de forma que el contenido rinda desde el primer día.",
+      "nombre": "WordPress y Proyecto Web",
+      "descripcion": "Conceptos básicos de la web, configuración de WordPress y desarrollo del caso práctico Cervezas Brancal.",
       "recursos": [
         {
-          "titulo": "Apuntes del módulo",
-          "tipo": "apuntes",
-          "url": "../wordpress/index.html",
-          "descripcion": "La referencia larga para consultar después de la sesión.",
-          "meta": "En preparación"
+          "titulo": "Presentación: Conceptos básicos web",
+          "tipo": "diapositivas",
+          "url": "https://docs.google.com/presentation/d/19dDyZPs8Q_IC7xsGNmYQASVQK7-ug6KgB0aQwggeyAM/edit?usp=sharing",
+          "descripcion": "Fundamentos de arquitectura web, dominios, hosting y cómo funciona la web.",
+          "meta": "Google Slides"
         },
         {
-          "titulo": "Descargar WordPress",
-          "tipo": "herramienta",
-          "url": "https://es.wordpress.org/download/",
-          "descripcion": "La versión oficial en español, para instalaciones propias."
+          "titulo": "Presentación: WordPress",
+          "tipo": "diapositivas",
+          "url": "https://docs.google.com/presentation/d/1zLRWKhYEcxdUwnVhzJwwGX_sFaiBR0t9qHWM2GMPu8A/edit?usp=sharing",
+          "descripcion": "Instalación, estructura, temas, plugins y gestión del contenido en WordPress.",
+          "meta": "Google Slides"
         },
         {
-          "titulo": "Rank Math SEO",
-          "tipo": "herramienta",
-          "url": "https://es.wordpress.org/plugins/seo-by-rank-math/",
-          "descripcion": "El plugin de SEO que usamos en el taller. Uno solo: nunca a la vez que Yoast."
+          "titulo": "Presentación: WordPress + IA",
+          "tipo": "diapositivas",
+          "url": "https://docs.google.com/presentation/d/1WOLL5XT0Ne97j3Y4lpsS5OHotDOSr6JG5AHDizH9Toc/edit?usp=sharing",
+          "descripcion": "Uso de Inteligencia Artificial para creación de contenidos, diseño y optimización en WordPress.",
+          "meta": "Google Slides"
         },
         {
-          "titulo": "LiteSpeed Cache",
+          "titulo": "Presentación: Proyecto web \"Cervezas Brancal\"",
+          "tipo": "diapositivas",
+          "url": "https://docs.google.com/presentation/d/1ekOOrHKjoFx-Tu9CY36aM2KaNMYuZ4aP0tIFVrkSBfg/edit?usp=sharing",
+          "descripcion": "Caso práctico guiado: diseño, estructura y desarrollo de la web de Cervezas Brancal.",
+          "meta": "Google Slides"
+        },
+        {
+          "titulo": "Recursos para descargar",
+          "tipo": "descarga",
+          "url": "https://drive.google.com/drive/folders/1-Xv7GW_WNwAQ9M7rexWnuul4qoiMOztk?usp=sharing",
+          "descripcion": "Carpeta compartida con imágenes, logotipos y archivos multimedia para el proyecto.",
+          "meta": "Google Drive"
+        },
+        {
+          "titulo": "Panel de WordPress.com",
           "tipo": "herramienta",
-          "url": "https://es.wordpress.org/plugins/litespeed-cache/",
-          "descripcion": "Caché, minificación y WebP en un único plugin de rendimiento."
+          "url": "https://my.wordpress.com/sites",
+          "descripcion": "Panel de administración y gestión de sitios web en WordPress.com."
+        }
+      ]
+    },
+    {
+      "id": "make",
+      "numero": "02",
+      "nombre": "Make (Automatización)",
+      "descripcion": "Automatizar tareas repetitivas de marketing y conectar herramientas sin necesidad de programar.",
+      "recursos": [
+        {
+          "titulo": "Presentación: Automatizaciones con Make",
+          "tipo": "diapositivas",
+          "url": "https://docs.google.com/presentation/d/1u6V5pW9837gC2jmXfoFaYtJtCeGNY1VrBp3KyxtL9wI/edit?usp=sharing",
+          "descripcion": "Conceptos clave, creación de escenarios y automatización de procesos con Make.",
+          "meta": "Google Slides"
+        },
+        {
+          "titulo": "Web de Make",
+          "tipo": "herramienta",
+          "url": "https://www.make.com/en",
+          "descripcion": "Plataforma visual de integración y automatización de flujos de trabajo en la nube."
+        },
+        {
+          "titulo": "Centro de ayuda y documentación",
+          "tipo": "enlace",
+          "url": "https://www.make.com/en/help",
+          "descripcion": "Guías oficiales de módulos, conexiones, webhooks y funciones de Make."
+        },
+        {
+          "titulo": "Plantillas de escenarios",
+          "tipo": "plantilla",
+          "url": "https://www.make.com/en/templates",
+          "descripcion": "Miles de escenarios prediseñados listos para clonar y personalizar."
         }
       ]
     },
     {
       "id": "seo",
-      "numero": "02",
-      "nombre": "SEO",
-      "descripcion": "Cómo se gana visibilidad en 2026: primero en Google, y ahora también dentro de ChatGPT, AI Overviews y Perplexity.",
-      "recursos": [
-        {
-          "titulo": "Presentación de la sesión",
-          "tipo": "diapositivas",
-          "url": "../claude/v1/seo-geo-2026.html",
-          "descripcion": "SEO & GEO 2026, 67 diapositivas. Se abre en el navegador; con la tecla S se activa la vista de presentador.",
-          "meta": "HTML"
-        },
-        {
-          "titulo": "Presentación en PowerPoint",
-          "tipo": "descarga",
-          "url": "../claude/v1/seo-geo-2026.pptx",
-          "descripcion": "La misma presentación, editable y para llevártela.",
-          "meta": "PPTX · 1,4 MB",
-          "descarga": true
-        },
-        {
-          "titulo": "Apuntes completos del módulo",
-          "tipo": "apuntes",
-          "url": "../seo/index.html",
-          "descripcion": "Ocho bloques, de la investigación de keywords a la optimización para motores generativos."
-        },
-        {
-          "titulo": "Glosario",
-          "tipo": "apuntes",
-          "url": "../seo/glosario.html",
-          "descripcion": "Las siglas del sector, explicadas y ordenadas alfabéticamente."
-        },
-        {
-          "titulo": "Fuentes y bibliografía",
-          "tipo": "apuntes",
-          "url": "../seo/fuentes.html",
-          "descripcion": "De dónde sale cada dato de la sesión, para poder comprobarlo."
-        },
-        {
-          "titulo": "Google Search Console",
-          "tipo": "herramienta",
-          "url": "https://search.google.com/search-console",
-          "descripcion": "La herramienta con la que empieza cualquier proyecto. Gratis."
-        },
-        {
-          "titulo": "PageSpeed Insights",
-          "tipo": "herramienta",
-          "url": "https://pagespeed.web.dev/",
-          "descripcion": "Core Web Vitals de cualquier URL, con datos de usuarios reales."
-        },
-        {
-          "titulo": "Ahrefs Free Keyword Generator",
-          "tipo": "herramienta",
-          "url": "https://ahrefs.com/keyword-generator",
-          "descripcion": "Cien ideas de keyword con volumen estimado, sin registro."
-        }
-      ]
-    },
-    {
-      "id": "n8n",
       "numero": "03",
-      "nombre": "n8n",
-      "descripcion": "Automatizar el trabajo repetitivo de marketing sin depender de un desarrollador.",
+      "nombre": "SEO",
+      "descripcion": "Puntos clave de posicionamiento y visibilidad en buscadores e IA, a tratar al cierre si el tiempo lo permite.",
+      "oculto": true,
       "recursos": [
         {
-          "titulo": "Apuntes del módulo",
-          "tipo": "apuntes",
-          "url": "../n8n/index.html",
-          "descripcion": "La referencia larga para consultar después de la sesión.",
-          "meta": "En preparación"
-        },
-        {
-          "titulo": "n8n",
-          "tipo": "herramienta",
-          "url": "https://n8n.io/",
-          "descripcion": "La plataforma: versión en la nube y versión que puedes instalar tú."
-        },
-        {
-          "titulo": "Documentación oficial",
-          "tipo": "enlace",
-          "url": "https://docs.n8n.io/",
-          "descripcion": "El manual de referencia de nodos, credenciales y expresiones."
-        },
-        {
-          "titulo": "Plantillas de flujos",
-          "tipo": "plantilla",
-          "url": "https://n8n.io/workflows/",
-          "descripcion": "Miles de flujos ya montados que se importan y se adaptan."
+          "titulo": "Presentación: SEO (2026)",
+          "tipo": "diapositivas",
+          "url": "https://docs.google.com/presentation/d/1jiby1Qj3-w3h6CJuCQMzAMoVRED5hagQ/edit?usp=sharing&ouid=114171417756080868081&rtpof=true&sd=true",
+          "descripcion": "Diapositivas de la sesión de SEO, factores de posicionamiento y visibilidad en motores de búsqueda e IA.",
+          "meta": "Google Slides"
         }
       ]
     }

@@ -1,4 +1,4 @@
-# Taller de WordPress, SEO y n8n — Portal de Recursos
+# Taller de WordPress y Make — Portal de Recursos
 
 Portal web moderno diseñado para los alumnos del máster con todo el material del taller organizado por módulos y recursos.
 
@@ -41,22 +41,24 @@ Abre `recursos.json`, busca el módulo correspondiente y añade un objeto a la l
 | `tipo` | Sí | Tipo de recurso para el badge de color: `diapositivas`, `descarga`, `apuntes`, `herramienta`, `enlace`, `video`, `plantilla`. |
 | `url` | Sí | URL completa (`https://…`) o ruta relativa (`archivos/…` o `../modulo/`). |
 | `descripcion` | No | Breve explicación para los alumnos. |
-| `meta` | No | Información adicional como formato o peso (`PPTX · 1,4 MB`, `En preparación`, `HTML`). |
+| `meta` | No | Información adicional como formato o peso (`Google Slides`, `Google Drive`, `HTML`). |
 | `descarga` | No | `true` si es un archivo que debe descargarse directamente. |
+| `oculto` | No | `true` para dejar el recurso o la sección completa preparado pero invisible en la web. |
+
+> **Nota:** Puedes añadir `"oculto": true` tanto a un recurso individual como a una sección entera (`secciones`) en `recursos.json` para ocultarla por completo.
 
 ---
 
 ## Novedades y características para los alumnos
 
-1. **Buscador instantáneo:** Escribe cualquier término ("Rank Math", "PPTX", "Search Console", "n8n") y la lista se filtra en tiempo real.
+1. **Buscador instantáneo:** Escribe cualquier término ("Make", "Brancal", "WordPress", "Search Console") y la lista se filtra en tiempo real.
 2. **Atajo de teclado:** Pulsa la tecla `/` en cualquier momento para ir directamente al buscador.
 3. **Filtros por categoría:** Botones para ver sólo Diapositivas, Descargas, Apuntes, Herramientas o Plantillas.
 4. **Copiar enlace directo:** Cada tarjeta incluye un botón para copiar el enlace directo al portapapeles.
-5. **Accesos directos Bento:** En la parte superior se destacan los recursos clave como la presentación interactiva y el PowerPoint editable.
-6. **Navegación por anclas:** Puedes enviar a los alumnos directamente a una sección compartiendo el enlace con ancla:
+5. **Navegación por anclas:** Puedes enviar a los alumnos directamente a una sección compartiendo el enlace con ancla:
    - `.../taller/#wordpress`
+   - `.../taller/#make`
    - `.../taller/#seo`
-   - `.../taller/#n8n`
 
 ---
 
